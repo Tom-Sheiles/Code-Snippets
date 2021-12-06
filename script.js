@@ -1,8 +1,5 @@
-addSnippetString(`
-function a(){
-    jdlfkjslkfj;
-    jsdlfkjsldkjflsd;
+addSnippetString(`function(){
+	test
 }`);
 
-addSnippetStrings(['str', 'str2', 'str3']);
 createSnippets();

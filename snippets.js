@@ -27,7 +27,7 @@ class Snippets{
         }
     }
 
-    colors = {"function":"#E06C75","this":"#E06C75", "let":"#61AFEF", "=":"#E06C75", "NUMBER":"#C678DD", "()":"#98C379"}
+    colors = {"function":"#E06C75","let":"#61AFEF", "=":"#E06C75", "NUMBER":"#C678DD", "()":"#98C379",")":"#98C379","(":"#98C379"}
     encodeAsHtml(str)
     {
         let outString = '';

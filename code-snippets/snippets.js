@@ -27,7 +27,21 @@ class Snippets{
         }
     }
 
-    colors = {"function":"#E06C75","let":"#61AFEF", "=":"#E06C75", "NUMBER":"#C678DD", "()":"#98C379",")":"#98C379","(":"#98C379"}
+    colors = {
+    "function":"#E06C75",
+    "let":"#61AFEF",
+    "if":"#61AFEF",
+    "else":"#61AFEF",
+    "for":"#61AFEF",
+    "true":"#E5C07B",
+    "false":"#E5C07B",
+    "return":"#E06C75",
+    "=":"#E06C75",
+    "NUMBER":"#C678DD",
+    "()":"#98C379",
+    ")":"#98C379",
+    "(":"#98C379"}
+    
     encodeAsHtml(str)
     {
         let outString = '';
@@ -55,7 +69,7 @@ class Snippets{
     }
 
     addSnippetString(string) { this.strings.push(this.parseString(string)); }
-    addSnippetStrings(arr) { arr.forEach(str => this.strings.push(str) ); }
+    addSnippetStrings(arr) { arr.forEach(string => this.strings.push(this.parseString(string)) ); }
 }
 
 

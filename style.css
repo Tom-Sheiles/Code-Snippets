@@ -9,6 +9,10 @@ body{
     /* background: #a9b6c1; */
 }
 
+li{
+    margin: 5rem;
+}
+
 #body{
     margin-top: 5em;
 }
@@ -20,48 +24,6 @@ body{
 
 .example{
     display: flex;
-    justify-content: center;
-}
-
-.snippet{
-    border-style: none;
-    color: white;
-    /* border-color: white; */
-    /* background: #282c34; */ 
-    background: #292e30;
-    border-radius: 5px;
-    width: 25%;
-    padding: 5px;
-    filter: drop-shadow(10px 10px 8px black);
-    margin-left: 10%;
-}
-
-.snippet-p{
-    margin-left: 10px;
-    margin-top: 20px;
-    font-size: 11pt;
-}
-
-.window-buttons{
-    display: flex;
-    cursor: move;
-}
-
-.window-button{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-left: 5px;
-}
-
-.close{
-    background: #f45450;
-}
-
-.mimimize{
-   background: #f5b63e; 
-}
-
-.maximize{
-    background: #31c146;
+    justify-content: space-around;
+    margin: 5rem;
 }

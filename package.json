@@ -1,0 +1,20 @@
+{
+  "name": "code-snippets",
+  "version": "1.0.0",
+  "description": "Create HTML code snippets",
+  "main": "example.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tom-Sheiles/Code-Snippets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tom-Sheiles/Code-Snippets/issues"
+  },
+  "homepage": "https://github.com/Tom-Sheiles/Code-Snippets#readme"
+}

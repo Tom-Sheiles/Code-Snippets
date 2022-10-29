@@ -1,3 +1,4 @@
+import {Snippets} from "./snippets/snippets.js"
 
 let snippets = new Snippets();
 

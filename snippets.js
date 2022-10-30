@@ -1,16 +1,43 @@
+import { languageDefs } from "./snippetdefs.js";
+import Lexer from "./lexer.js";
 
 function logError(errorText)
 {
     console.error(`Snippet error: ${errorText}`);
 }
 
+function lexWords(input, lang)
+{
+    let lexer = new Lexer(input);
+    let defs = languageDefs[lang].words;
+
+    while(!lexer.isEmpty()){
+        let c = lexer.pop();
+        let found = false;
+        for(let i = 0; i < defs.length; i++)
+        {
+            if(c.match(defs[i].def.start) != null && !found){
+                console.log(lexer.getIndex(), c, defs[i]);
+                found = true;
+            }
+        }
+    }
+}
+
 export function CreateSnippet(string, language)
 {
-    // TODO: change this to a dict of supported languages
-    if(language !== "js")
+    let languageType = typeof language
+    if (languageType == 'string')
     {
-        logError(`language "${language}" not found`)
-        return "";
+        // look for language defs in pre - defined
+        let output = lexWords(string, language);
+        output = string.replaceAll("\n", "<br>");
+        output = output.replaceAll("    ", "&emsp;");
+        return output;
     }
-    return string
+    else if(languageType == 'object')
+    {
+        // custom def defined
+    }
+    
 }
